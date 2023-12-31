@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: url('chat2.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+body{
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 3vw;
+    margin-bottom: 5px;
+}
+.logo{
+    position: absolute;
+    left: 25%;
+    width: 90px;
+    height: 90px;
+    border-radius: 20%;
+}
+p{
+    left: 31%;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    background: linear-gradient(to right, #af3a13, #85c94a,#7ac185, #6f0546);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.container{
+    max-width: 955px;
+    background-image: linear-gradient(#4ce13a,#175db4);
+    margin: auto;
+    height: 60vh;
+    padding: 33px;
+    overflow-y: scroll;
+    margin-bottom: 23px;
+    border: 2px solid black;
+    
+}
+.container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+@supports (-ms-ime-align:auto) {
+    .container {
+        scrollbar-width: thin;
+        scrollbar-color: #888 #f1f1f1;
+    }
+}
+
+.message{
+    background-color: yellow;
+    color:grey;
+    width: 24%;
+    margin: 17px 12px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.right{
+    float: right;
+    clear: both;
+}
+
+.left{
+    float: left;
+    clear: both;
+    background-color: grey;
+    color: white;
+}
+
+.center{
+    text-align: center;
+    color:rgb(65, 64, 64);
+    clear: both;
+}
+
+#form{
+    display: block;
+    margin: auto;
+    max-width: 980px;
+    text-align: center;
+    width: 100%;
+}
+#input{
+    width: 90%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    height: 34px;
+    background:rgb(214, 212, 212);
+    caret-color: red;
+}
+.btn{
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 5px;
+    height: 34px;
+    width: 90px;
+    background-color: #85c94a;
+    
+}
+.btn:hover{
+    background-color: yellow;
+}
